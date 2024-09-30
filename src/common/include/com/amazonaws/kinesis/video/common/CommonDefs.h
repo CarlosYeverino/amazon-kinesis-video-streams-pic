@@ -574,7 +574,7 @@ typedef struct _stat STAT_STRUCT;
 
 #include <dlfcn.h>
 
-#if !defined(__MACH__)
+#if defined(__linux__) && !defined(__QNX__)
 #include <sys/prctl.h>
 #endif
 
